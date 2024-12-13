@@ -135,6 +135,15 @@ main{
 	max-width: 184px;
 	height: 50px;
 }
+.work_other .four {
+	padding: 40px 40px 40px 10px;
+}
+h4,.four{
+	font-size: 18px;
+}
+.work_other img{
+	max-width: 150px;
+}
 }
 
 /* lg <= Extra large (xl) */
@@ -185,6 +194,7 @@ main{
 	.promo_widget_nav > a{
 		font-size: 16px;
 	}
+
 }
 
 /* md <= Large (lg) */
