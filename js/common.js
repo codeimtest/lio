@@ -15,7 +15,23 @@
 			}
 		});
 	});
-	
+	// Get all elements with the class 'h-100'
+const elements = document.querySelectorAll('.h-a');
+
+// Find the maximum height
+let maxHeight = 0;
+elements.forEach(element => {
+    const elementHeight = element.clientHeight;
+    if (elementHeight > maxHeight) {
+        maxHeight = elementHeight;
+    }
+});
+
+// Set all elements to the maximum height
+elements.forEach(element => {
+    element.style.height = `${maxHeight}px`;
+});
+
 	$(".faq_widget > div").click(function() {
 		var $this = $(this);
 		var $activeBlock = $this.find(".regular_text");
