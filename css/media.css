@@ -130,7 +130,7 @@ main{
 .line_items_alt div{
 	padding: 24px 0 8px 0;
 }
-.image-container a{
+.image-container .btn{
 	font-size: calc(var(--index)* 0.8);
 	max-width: 184px;
 	height: 50px;
@@ -148,7 +148,7 @@ h4,.four{
 
 /* lg <= Extra large (xl) */
 @media (max-width : 1200px) {
-	.image-container a{
+	.image-container .btn{
 		max-width: 150px;
 	}
 	.faq_widget .regular_text{
@@ -199,13 +199,17 @@ h4,.four{
 
 /* md <= Large (lg) */
 @media (max-width : 992px) {
-	.image-container div:first-child {
+	.image-container a:first-child {
 		margin-left: -20px;
+}
+.image-container a:hover{
+	z-index: 0;
+	opacity: 1;
 }
 .image-container:hover > :not(:hover){
 	opacity: 1;
 }
-	.image-container a{
+	.image-container .btn{
 		display: none;
 	}
 	.promo_widget_image.promo_widget_image{
