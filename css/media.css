@@ -536,6 +536,21 @@ h4,.four{
 	.image_large{
 		min-height: 300px;
 	}
+	h1, .one,.promo_widget_wrapper .one{
+		font-size: 14px;
+	}
+	.promo_widget_wrapper h1{
+		font-size: 12px;
+	}
+	h2, .two{
+		font-size: 16px;
+	}
+	.btn_grid .btn, .btn{
+		font-size: 12px;
+	}
+	.section_form h2{
+		font-size: 20px;
+	}
 }
 
 
