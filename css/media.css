@@ -551,6 +551,18 @@ h4,.four{
 	.section_form h2{
 		font-size: 20px;
 	}
+	.lg_text{
+		font-size: 12px;
+	}
+	h3, .three{
+		font-size: 16px;
+	}
+	.md_text{
+		font-size: 12px;
+	}
+	.less_text, .section_text{
+		font-size: 12px;
+	}
 }
 
 
