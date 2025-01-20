@@ -8,11 +8,7 @@
 			var $this = $(this);
 			var $activeBlock = $this.find(".regular_text");
 	
-			if (index === 0) { // РџРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
-				$this.find(".regular_text").show();
-			} else {
-				$activeBlock.hide();
-			}
+		
 		});
 	});
 	// Get all elements with the class 'h-100'

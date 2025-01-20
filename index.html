@@ -12,7 +12,7 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="icon" href="images/favicon.png">
+	<link rel="icon" href="images/favicon.ico">
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
@@ -38,7 +38,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="d-flex align-items-center justify-content-between">
-							<a href="#" class="logo">
+							<a href="/lio/index.html" class="logo">
 								<img src="images/logo.svg" alt="">
 							</a>
 							<div class="d-flex align-items-center justify-content-end">
@@ -49,7 +49,7 @@
 											<li><a href="#">+7 (843) 227-05-06</a></li>
 										</ul>
 									</nav>
-									<a href="#" class="btn gray_btn">Связаться с нами</a>
+									<a href="#contact" class="btn gray_btn">Связаться с нами</a>
 								</div>
 								<div class="btn menu_button d-flex align-items-center">
 									<span class="d-none d-xl-inline">Меню</span>
@@ -67,12 +67,12 @@
 							<div class="col-12">
 								<div class="aside_wrap">
 									<ul>
-										<li><a href="#">Главная</a></li>
-										<li><a href="#">Производственное управление</a></li>
-										<li><a href="#">Инженерия и ниокр</a></li>
-										<li><a href="#">Рабочие профессии</a></li>
-										<li><a href="#">Асу тп и ит</a></li>
-										<li><a href="#">Старт карьеры для молодых</a></li>
+										<li><a href="/lio">Главная</a></li>
+										<li><a href="/lio/upravlenie.html">Производственное управление</a></li>
+										<li><a href="/lio/eng.html">Инженерия и ниокр</a></li>
+										<li><a href="/lio/works.html">Рабочие профессии</a></li>
+										<li><a href="/lio/asu.html">Асу тп и ит</a></li>
+										<li><a href="/lio/molodym.html">Старт карьеры для молодых</a></li>
 										<li><a href="#">Контакты</a></li>
 									</ul>
 									<div>
@@ -284,7 +284,7 @@
 									</div>
 									<div class="col-lg-6 relative">
 										<div class="section_video_widget_item radius_widget d-flex align-items-end justify-content-center" style="background: var(--accent-alt);">
-											<img src="images/spec.png" class="pt-lg-0 pt-3" style="max-width: 750px;margin: auto;display: block;object-fit: cover;width: auto;" loading="lazy" alt="">
+											<img src="images/spec.png" class="pt-lg-0 pt-3" style="max-width: 400px;margin: auto;display: block;object-fit: contain;width: auto;    object-position: bottom;" loading="lazy" alt="">
 										</div>
 									</div>
 								</div>
@@ -309,7 +309,7 @@
 				</div>
 				<div class="row gy-lg-4 gy-2">
 					<div class="col-lg-6 d-flex flex-column flex-1">
-						<div class="grid_widget relative widget_icon widget_icon_ruble radius_widget section_widgets accent_bg pt-lg-5 pb-3 pt-3 pb-lg-5 white_text  d-flex flex-column justify-content-between">
+						<div class="grid_widget relative widget_icon widget_icon_ruble radius_widget section_widgets accent_bg pt-lg-5 pb-4 pt-4 pb-lg-5 white_text  d-flex flex-column justify-content-between">
 							<div class="three pb-lg-5 pb-0 mb-3">Стабильная зарплата. <br>Индексация и система грейдов</div>
 							<div class="md_text column_two column_auto">
 								<div>Индексация каждый год</div>
@@ -343,12 +343,12 @@
 					</div>
 					<div class="col-lg-4">
 						<div class="grid_widget section_widgets white_text d-flex flex-column justify-content-between radius_widget h-100 pt-lg-5 pb-3 pt-3 pb-lg-5" style="background-size: cover;background-image: url('./images/auto.jpg');">
-							<div class="three pb-5 mb-3">Новый завод и комфортные<br> условия труда</div>
+							<div class="three pb-5 mb-3">Вахта и компенсация<br> расходов на транспорт</div>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="grid_widget relative section_widgets widget_icon widget_icon_plane radius_widget accent_bg pt-lg-5 pb-3 pt-3 pb-lg-5 white_text  d-flex flex-column justify-content-between">
-							<div class="three pb-5 mb-3">Выплаты на праздники <br>и значимые даты</div>
+							<div class="three pb-5 mb-3">Повышенные ставки<br> за командировки</div>
 						</div>
 					</div>
 				</div>
@@ -398,11 +398,13 @@
 						<img src="images/section_img1.jpg" alt="" loading="lazy" class="image image_large">
 					</div>
 					<div class="col-lg-4">
-						<h3>Мы — команда</h3>
+						<div class="grid_widget_mobile">
+							<h3>Мы — команда</h3>
 						<div class="lg_text bold_text mt-lg-4 mt-3">
 							<p>Мы создаем комфортные и безопасные условия работы на производстве и в отделах</p>
 							<p>Мы строим продуктивные рабочие отношения. Обмениваемся опытом, используем обратную связь от клиентов и партнеров, помогаем друг другу в решении задач</p>
 							<p>Заботимся о климате в коллективах. Проводим мероприятия, награждаем за достижения, празднуем значимые события друг друга</p>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -410,39 +412,47 @@
 			<section class="container-fluid">
 				<div class="row">
 					<div class="col-lg-6">
-						<h3 class="mb-lg-5 mb-3">Узнайте больше о наших направлениях:</h3>
+						<h3 class="mb-lg-5 mb-3 grid_widget_mobile">Узнайте больше о наших направлениях:</h3>
 					</div>
 				</div>
 				<div class="row gy-3">
-					<div class="col-xl-3 col-sm-6">
+					<div class="col-xl-3 col-md-6">
 						<a href="/lio/eng.html" class="work_other radius_widget relative pt-3" >
-							<div class="four radius_widget overflow-hidden h_full" style="background-color: #BFD9F0;">
+							<div class="four radius_widget overflow-hidden h_full">
 								<img src="images/eng2.png" loading="lazy" alt="">
-								Инженерия <br>и НИОКР
+								<div class="grid_widget_mobile">
+									Инженерия <br>и НИОКР
+								</div>
 							</div>
 						</a>
 					</div>
-					<div class="col-xl-3 col-sm-6">
+					<div class="col-xl-3 col-md-6">
 						<a href="/lio/upravlenie.html" class="work_other radius_widget relative pt-3" >
-							<div class="four radius_widget overflow-hidden h_full" style="background-color: #E4F0FB;">
+							<div class="four radius_widget overflow-hidden h_full">
 								<img src="images/upr2.png" loading="lazy" alt="">
-								Управление <br>производством
+								<div class="grid_widget_mobile">
+									Управление <br>производством
+								</div>
 							</div>
 						</a>
 					</div>
-					<div class="col-xl-3 col-sm-6">
+					<div class="col-xl-3 col-md-6">
 						<a href="/lio/works.html" class="work_other radius_widget relative pt-3" >
-							<div class="four radius_widget overflow-hidden h_full" style="background-color: #E4F0FB;">
+							<div class="four radius_widget overflow-hidden h_full">
 								<img src="images/rabochiy.png" loading="lazy" alt="">
-								Рабочие <br> профессии
+								<div class="grid_widget_mobile">
+									Рабочие <br> профессии
+								</div>
 							</div>
 						</a>
 					</div>
-					<div class="col-xl-3 col-sm-6">
+					<div class="col-xl-3 col-md-6">
 						<a href="/lio/asu.html" class="work_other radius_widget relative pt-3" >
-							<div class="four radius_widget overflow-hidden h_full" style="background-color: #E4F0FB;">
+							<div class="four radius_widget overflow-hidden h_full">
 								<img src="images/asu2.png" loading="lazy" alt="">
-								АСУ ТП и ИТ
+								<div class="grid_widget_mobile">
+									АСУ ТП и ИТ
+								</div>
 							</div>
 						</a>
 					</div>
@@ -486,20 +496,19 @@
 			<div class="container-fluid grid_widget">
 				<div class="row gy-3">
 					<div class="col-lg-4">
-						<a href="#" class="logo mb-3 mb-lg-0 d-block">
+						<a href="/lio/" class="logo mb-3 mb-lg-0 d-block">
 							<img src="images/logo.svg" alt="">
 						</a>
 					</div>
 					<div class="col-xl-3 col-lg-5 d-lg-flex d-none">
 						<nav>
 							<ul class="regular_text">
-								<li><a href="#">Оборудование</a></li>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Сервис</a></li>
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Готовые решения</a></li>
-								<li><a href="#">Выполненные проекты</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="https://lyomachines.ru/catalog/">Оборудование</a></li>
+								<li><a href="https://lyomachines.ru/news/">Новости</a></li>
+								<li><a href="https://lyomachines.ru/konsalting-i-opredelenie-tekhnicheskogo-zadaniya/">Сервис</a></li>
+								<li><a href="https://lyomachines.ru/about/">О компании</a></li>
+								<li><a href="https://lyomachines.ru/projects/">Выполненные проекты</a></li>
+								<li><a href="https://lyomachines.ru/contacts/">Контакты</a></li>
 							</ul>
 						</nav>
 

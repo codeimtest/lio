@@ -25,7 +25,7 @@
 /* BOOTSTRAP SETTINGS SECTION */
 
 /* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: 2rem; }
 .row, .row > * { --bs-gutter-x: 1.25rem; }
 
 /* FONTS LOAD SECTION */
@@ -213,6 +213,7 @@ a{
 	padding-right: 90px;
 	padding: 20px 28px 20px 36px;
 	cursor: pointer;
+	font-size: 18px;
 }
 .menu_button_toggle{
 	width: 32px;
@@ -384,12 +385,14 @@ section{
 }
 .section_widgets{
 	min-height: 460px;
+	background-repeat: no-repeat;
+	background-size: initial
 }
 /* .flex-1{
 	flex: 1;
 } */
 header{
-	padding: 30px 0 30px 0;
+	padding: 21px 0 16px 0;
 	background: #fff;
 	position: fixed;
 	top: 0;
@@ -405,7 +408,9 @@ header a{
 	color: var(--text);
 	font-weight: var(--bold);
 	text-decoration: none;
+	font-size: 18px;
 }
+
 header ul{
 	list-style: none;
 	padding-left: 0;
@@ -414,6 +419,7 @@ header ul{
 }
 header .btn{
 	border-radius: var(--radius);
+	font-size: 18px;
 }
 aside{
 	
@@ -643,6 +649,7 @@ aside ul li:last-child a{
 	width: 100%;
 	max-height: 800px;
 	height: 100%;
+	min-height: 100%;
 }
 .section_video_widget_item_absolute{
 	position: absolute;
@@ -657,6 +664,7 @@ aside ul li:last-child a{
 	position: relative;
 	padding: 144px 0 96px 0;
 }
+
 .section_with_image_alt{
 	padding: 64px 0;
 }
@@ -769,9 +777,14 @@ aside ul li:last-child a{
 	color: #000;
 	text-decoration: none;
 	overflow: hidden;
+	transition: var(--transition);
+	
+}
+.work_other div{
+	background: #E4F0FB;
 }
 .work_other .four{
-	padding: 34px 34px 70px 34px;
+	padding: 24px 24px 35px;
 }
 
 
@@ -780,7 +793,7 @@ aside ul li:last-child a{
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .widget_icon{
@@ -808,10 +821,12 @@ aside ul li:last-child a{
 .work_other img {
 	position: absolute;
 	z-index: 1;
-	right: 0;
+	right: -20px;
 	top: 0;
 	max-width: 190px;
 	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 .image-overlay{
 	position: absolute;
@@ -821,6 +836,9 @@ aside ul li:last-child a{
 	  bottom: -10px; /* отрицательное значение, чтобы выходить за пределы блока */
 	  background: rgba(0, 0, 0, 0); /* прозрачный фон - можно изменить на нужный вам цвет или изображение */
 	  border-radius: 20px;
+}
+.play_btn svg{
+	margin-left: 6px;
 }
 .video_widget .play_btn{
 	width: 100px;

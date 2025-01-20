@@ -136,13 +136,17 @@ main{
 	height: 50px;
 }
 .work_other .four {
-	padding: 40px 40px 40px 10px;
+	/* padding: 40px 40px 40px 10px; */
 }
 h4,.four{
 	font-size: 18px;
 }
 .work_other img{
 	max-width: 150px;
+	
+}
+.section_widget_special{
+	background-size: initial;
 }
 }
 
@@ -194,11 +198,14 @@ h4,.four{
 	.promo_widget_nav > a{
 		font-size: 16px;
 	}
-
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{ --bs-gutter-x: .625rem; }
 }
 
 /* md <= Large (lg) */
 @media (max-width : 992px) {
+	.work_other img{
+		max-width: 195px;
+	}
 	.image-container a:first-child {
 		margin-left: -20px;
 }
@@ -272,7 +279,7 @@ h4,.four{
 		padding-top: 18px;
 		padding-bottom: 18px;
 	}
-	.grid_widget{
+	.grid_widget,.grid_widget_mobile{
 		padding-left: 18px !important;
 		padding-right: 18px !important;
 	}
@@ -289,7 +296,7 @@ h4,.four{
 		max-width: 300px;
 		display: block;
 		margin-left: auto;
-		object-fit: contain;
+		object-fit: cover;
 		object-position: bottom;
 		height: 100%;
 	}
@@ -362,7 +369,17 @@ h4,.four{
 		font-size: calc(var(--index)* 2.1);
 	}
 	h4,.four{
-		font-size: calc(var(--index)* 1.9);
+		font-size: 16px;
+	}
+	.work_other > div{
+		padding-top: 18px !important;
+		padding-bottom: 18px !important;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.work_other .four{
+		min-height: 134px;
+		padding: 0;
 	}
 	.faq_widget p{
 		font-size: calc(var(--index)* 1.6);
@@ -608,15 +625,33 @@ h4,.four{
 @media (hover: hover) {
 	.btn:hover{
 		color: #fff;
-		opacity: 0.8;
+		background: #00827E;
+		opacity: 1;
+	}
+	.btn.blue_btn:hover{
+		color: #fff;
+		background: #035B8F;
+	}
+	.btn.gray_btn:hover{
+		background: #D9E2E2;
+		color: #000;
 	}
 	.menu_button:hover{
-		opacity: 0.8;
+		opacity: 1;
 		color: #000;
+		background: #009B9A;
+	}
+	.btn.bordered_white_btn:hover{
+		background: #fff;
+		color: #0D75B3;
 	}
 	.gray_btn:hover{
 		color: #000;
 		opacity: 0.8;
+	}
+	form button.btn:hover{
+		background: #fff;
+		color: #00827E;
 	}
 	a:hover{
 		color: #000;
@@ -626,16 +661,46 @@ h4,.four{
 		color: #fff;
 		opacity: 0.8;
 	}
+	.work_other:hover div {
+		background: #BFD9F0;
+	}
+	.work_other:hover{
+		opacity: 1;
+	}
+	header a:hover{
+		color: #009B9A;
+	}
+	.sl_nav:hover{
+		background: #00827E;
+	}
 }
 
 @media (hover: none){
 	.btn:active{
 		color: #fff;
-		opacity: 0.8;
+		background: #00827E;
+		opacity: 1;
+	}
+	.btn.blue_btn:active{
+		color: #fff;
+		background: #035B8F;
+	}
+	.btn.gray_btn:active{
+		background: #D9E2E2;
+		color: #000;
 	}
 	.menu_button:active{
-		opacity: 0.8;
+		opacity: 1;
 		color: #000;
+		background: #009B9A;
+	}
+	.btn.bordered_white_btn:active{
+		background: #fff;
+		color: #0D75B3;
+	}
+	form button.btn:active{
+		background: #fff;
+		color: #00827E;
 	}
 	.gray_btn:active{
 		color: #000;
@@ -648,5 +713,17 @@ h4,.four{
 	.promo_widget_nav > a:active{
 		color: #fff;
 		opacity: 0.8;
+	}
+	.work_other:active div {
+		background: #BFD9F0;
+	}
+	.work_other:active{
+		opacity: 1;
+	}
+	header a:active{
+		color: #009B9A;
+	}
+	.sl_nav:active{
+		background: #00827E;
 	}
 }
