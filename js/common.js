@@ -28,15 +28,23 @@ elements.forEach(element => {
     element.style.height = `${maxHeight}px`;
 });
 
-	$(".faq_widget > div").click(function() {
-		var $this = $(this);
-		var $activeBlock = $this.find(".regular_text");
-		$this.siblings(".faq_widget > div").find(".regular_text").slideUp(function() {
-			$(this).prev().removeClass("active");
-		});
-		$activeBlock.slideDown();	$('.faq_widget > div').removeClass('active')
-		$this.addClass('active');
-	});
+$(".faq_widget > div").click(function() {
+	var $this = $(this);
+	var $activeBlock = $this.find(".regular_text");
+	
+	if ($this.hasClass("active")) {
+			$activeBlock.slideUp();
+			$this.removeClass("active");
+	} else {
+			$this.siblings(".faq_widget > div").find(".regular_text").slideUp(function() {
+					$(this).prev().removeClass("active");
+			});
+			$activeBlock.slideDown();
+			$('.faq_widget > div').removeClass('active');
+			$this.addClass('active');
+	}
+});
+
 // Header toggle
 $(window).scroll(function() {
 	var scroll = $(window).scrollTop();

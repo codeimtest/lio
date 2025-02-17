@@ -37,7 +37,7 @@
 
 ::placeholder,label { color: #fff; }
 ::selection { background-color: var(--accent); color: #fff; }
-input, textarea { outline: none; }
+input, textarea { outline: none;   -webkit-appearance: none;}
 /* input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
 input:required:valid, textarea:required:valid { border-color: green; } */
 
@@ -482,7 +482,7 @@ aside ul li:last-child a{
 	margin-right: 24px;
 }
 .promo_widget_image.promo_widget_image{
-	bottom: -80px;
+	bottom: -50px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -538,7 +538,7 @@ aside ul li:last-child a{
 	max-height: 100%;
 	max-width: 404px;
 	object-fit: contain;
-	width: calc(100% - 20px) !important;
+	width: calc(100% - -10px) !important;
 	height: 100%;
 }
 .promo_widget_image + *{
@@ -579,7 +579,12 @@ aside ul li:last-child a{
 	bottom: -53px;
 }
 .promo_widget_image img{
-	width: 100%;
+	width: 110%;
+	margin-left: -20px;
+}
+.promo_widget_image.promo_alt_size{
+	width: 115%;
+	margin-left: -60px;
 }
 .promo_widget_nav > a.current{
 	font-weight: 700;
@@ -705,8 +710,14 @@ aside ul li:last-child a{
 	height: 50px;
 }
 .bordered_alt{
-	padding: 30px 90px;
+	padding: 30px 70px;
 	border-radius: 90px;
+}
+.number_wrap{
+	margin-right: 78px;
+}
+.m_cover{
+	background-size: cover;
 }
 .city_widget.city_widget_alt{
 	min-height: 700px;
@@ -784,7 +795,7 @@ aside ul li:last-child a{
 	background: #E4F0FB;
 }
 .work_other .four{
-	padding: 24px 24px 35px;
+	padding: 24px 24px 73px;
 }
 
 
@@ -870,7 +881,7 @@ aside ul li:last-child a{
 	content: '';
 	background: var(--accent);
 	height: 2px;
-	width: calc(var(--index)* 4);
+	min-width: calc(var(--index)* 5.5);
 	max-width: 140px;
 	top: 0;
 	bottom: 0;
@@ -932,7 +943,7 @@ form .form_group input::placeholder{
 	cursor: pointer;
 }
 .faq_widget > div.active{
-	cursor:initial;
+	cursor:pointer;
 }
 .faq_widget > div.active svg{
 	transform: rotate(136deg);
@@ -981,8 +992,7 @@ form .form_group input::placeholder{
 	justify-content: space-between; /* Распределить содержимое */
 }
 .card_item svg{
-	height: 100%;
-	max-height: 90px;
+	height: 101px;
 }
 
 /* footer new */
